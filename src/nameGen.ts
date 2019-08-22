@@ -51,32 +51,5 @@ export class nameGen {
 
     }
 
-/*
-    async checkNames(names: string[]) {
-        var rpc = new JsonRpc(apiUrl, { fetch });
-        var spliceCnt = 15;
-
-        for (var i = 0; i < names.length; i += spliceCnt) {
-          const tempNames = names.splice(0, spliceCnt);
-          await Promise.all(
-            tempNames.map(async name => {
-              var obj: NameObj;
-              try {
-                await rpc.get_account(name);
-                obj = {
-                  name: name,
-                  isTaken: true
-                };
-              } catch (error) {
-                obj = {
-                  name: name,
-                  isTaken: false
-                };
-              }
-
-            })
-          );
-        }
-      }    
-*/      
+  
 }
